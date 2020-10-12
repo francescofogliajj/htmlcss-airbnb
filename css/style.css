@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.city-1 {
+  background-image: url('../img/milano.jpg');
+}
+
+.city-2 {
+  background-image: url('../img/roma.jpg');
+}
+
+.city-3 {
+  background-image: url('../img/napoli.jpg');
+}
+
+[class^=city] {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  text-shadow: 2px 2px #E41D58;
+}
+
+.text:hover {
+  background-color: #E41D58;
+  cursor: pointer;
+}
