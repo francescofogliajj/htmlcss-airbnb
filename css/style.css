@@ -27,7 +27,7 @@
 .overlay {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   position: relative;
 }
 
@@ -38,12 +38,14 @@
   transform: translate(-50%, -50%);
   color: white;
   font-size: 50px;
-  padding: 5px;
-  border-radius: 10px;
-  text-shadow: 2px 2px #E41D58;
+  font-weight: bold;
+  text-shadow: 3px 3px #E41D58;
 }
 
-.text:hover {
-  background-color: #E41D58;
-  cursor: pointer;
+[class^=city]:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+[class^=city]:hover .text {
+  text-shadow: none;
 }
